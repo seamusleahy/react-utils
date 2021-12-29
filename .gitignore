@@ -94,3 +94,5 @@ src/**/*.js
 # Compiled JavaScript files
 dist/
 coverage/
+
+.DS_Store
