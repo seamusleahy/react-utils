@@ -1,0 +1,51 @@
+{
+  "name": "@seamusleahy/init-hooks",
+  "version": "1.0.0-alpha",
+  "description": "React hooks for component initialization",
+  "main": "dist/init-hooks.js",
+  "umd:main": "dist/init-hooks.umd.js",
+  "module": "dist/init-hooks.mjs",
+  "files": [
+    "dist",
+    "readme.md"
+  ],
+  "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^26.0.14",
+    "@types/react": "^17.0.37",
+    "jest": "^26.4.2",
+    "microbundle": "^0.13.0",
+    "pinst": "^2.0.0",
+    "prettier": "^2.0.4",
+    "react": "17.0.2",
+    "react-test-renderer": "^16.9.0",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seamusleahy/react-hooks"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "init"
+  ],
+  "author": "Seamus Leahy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seamusleahy/react-hooks/issues"
+  },
+  "homepage": "https://github.com/seamusleahy/react-hooks#readme",
+  "peerDependencies": {
+    "react": "^16.8"
+  }
+}
