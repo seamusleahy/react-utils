@@ -30,13 +30,5 @@
     "postinstall": "husky install",
     "format": "prettier **/*.ts **/*.js --write",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
-  },
-  "lint-staged": {
-    "packages/**/src/.+(ts|js)": [
-      "eslint"
-    ],
-    "**/*.+(js|jsx|ts|tsx|json|css)": [
-      "prettier --write"
-    ]
   }
 }
