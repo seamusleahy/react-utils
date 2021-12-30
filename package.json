@@ -31,6 +31,7 @@
     "postinstall": "husky install",
     "format": "prettier **/*.ts **/*.js --write",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "mismatch-deps": "yarn syncpack list-mismatches"
+    "mismatch-deps": "yarn syncpack list-mismatches",
+    "test:ci": "yarn workspaces foreach run test:ci"
   }
 }

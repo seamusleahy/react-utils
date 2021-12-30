@@ -63,6 +63,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@actions/core", [
+        ["npm:1.6.0", {
+          "packageLocation": "./.yarn/cache/@actions-core-npm-1.6.0-a2628c48cb-ac4689b609.zip/node_modules/@actions/core/",
+          "packageDependencies": [
+            ["@actions/core", "npm:1.6.0"],
+            ["@actions/http-client", "npm:1.0.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@actions/http-client", [
+        ["npm:1.0.11", {
+          "packageLocation": "./.yarn/cache/@actions-http-client-npm-1.0.11-f7fe88143c-2c72834ec3.zip/node_modules/@actions/http-client/",
+          "packageDependencies": [
+            ["@actions/http-client", "npm:1.0.11"],
+            ["tunnel", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@babel/code-frame", [
         ["npm:7.16.0", {
           "packageLocation": "./.yarn/cache/@babel-code-frame-npm-7.16.0-13dafb7fe1-8961d0302e.zip/node_modules/@babel/code-frame/",
@@ -3130,7 +3150,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react-hooks", "virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:7.0.2"],
             ["@types/jest", "npm:26.0.24"],
             ["@types/react", "npm:17.0.38"],
-            ["jest", "npm:26.6.3"],
+            ["jest", "virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:26.6.3"],
+            ["jest-github-actions-reporter", "npm:1.0.3"],
             ["microbundle", "npm:0.13.3"],
             ["react", "npm:17.0.2"],
             ["react-test-renderer", "virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:16.14.0"],
@@ -7995,10 +8016,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["npm:26.6.3", {
           "packageLocation": "./.yarn/cache/jest-npm-26.6.3-dafe93d52f-3a9b4c70e9.zip/node_modules/jest/",
           "packageDependencies": [
-            ["jest", "npm:26.6.3"],
+            ["jest", "npm:26.6.3"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:26.6.3", {
+          "packageLocation": "./.yarn/__virtual__/jest-virtual-2f425348ed/0/cache/jest-npm-26.6.3-dafe93d52f-3a9b4c70e9.zip/node_modules/jest/",
+          "packageDependencies": [
+            ["jest", "virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:26.6.3"],
             ["@jest/core", "npm:26.6.3"],
+            ["@types/jest-github-actions-reporter", null],
             ["import-local", "npm:3.0.3"],
-            ["jest-cli", "npm:26.6.3"]
+            ["jest-cli", "npm:26.6.3"],
+            ["jest-github-actions-reporter", "npm:1.0.3"]
+          ],
+          "packagePeers": [
+            "@types/jest-github-actions-reporter",
+            "jest-github-actions-reporter"
           ],
           "linkType": "HARD",
         }]
@@ -8150,6 +8184,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/jest-get-type-npm-26.3.0-a481f14d96-1cc6465ae4.zip/node_modules/jest-get-type/",
           "packageDependencies": [
             ["jest-get-type", "npm:26.3.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["jest-github-actions-reporter", [
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/jest-github-actions-reporter-npm-1.0.3-1a1036e7ca-f988ead081.zip/node_modules/jest-github-actions-reporter/",
+          "packageDependencies": [
+            ["jest-github-actions-reporter", "npm:1.0.3"],
+            ["@actions/core", "npm:1.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -12690,7 +12734,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bs-logger", "npm:0.2.6"],
             ["buffer-from", "npm:1.1.2"],
             ["fast-json-stable-stringify", "npm:2.1.0"],
-            ["jest", "npm:26.6.3"],
+            ["jest", "virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:26.6.3"],
             ["jest-util", "npm:26.6.2"],
             ["json5", "npm:2.2.0"],
             ["lodash", "npm:4.17.21"],
@@ -12778,6 +12822,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/typescript",
             "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["tunnel", [
+        ["npm:0.0.6", {
+          "packageLocation": "./.yarn/cache/tunnel-npm-0.0.6-b1c0830ea4-c362948df9.zip/node_modules/tunnel/",
+          "packageDependencies": [
+            ["tunnel", "npm:0.0.6"]
           ],
           "linkType": "HARD",
         }]
