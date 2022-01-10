@@ -1,6 +1,6 @@
 {
   "name": "@seamusleahy/init-hooks",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha2",
   "description": "React hooks for component initialization",
   "main": "dist/init-hooks.js",
   "umd:main": "dist/init-hooks.umd.js",
@@ -9,6 +9,7 @@
     "dist",
     "readme.md"
   ],
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^26.0.14",
@@ -33,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seamusleahy/react-hooks"
+    "url": "git+https://github.com/seamusleahy/react-utils"
   },
   "keywords": [
     "react",
@@ -43,9 +44,9 @@
   "author": "Seamus P. H. Leahy",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/seamusleahy/react-hooks/issues"
+    "url": "https://github.com/seamusleahy/react-utils/labels/init-hooks"
   },
-  "homepage": "https://github.com/seamusleahy/react-hooks#readme",
+  "homepage": "https://github.com/seamusleahy/react-utils/blob/main/packages/init-hooks/README.md",
   "peerDependencies": {
     "react": "^16.8"
   }
