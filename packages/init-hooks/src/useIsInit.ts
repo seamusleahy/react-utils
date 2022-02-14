@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useDebugValue } from "react";
 
 /**
  * Check if the first run of functional component.
@@ -18,6 +18,7 @@ import { useRef } from "react";
  */
 export function useIsInit(): boolean {
   const ref = useRef(true);
+  useDebugValue(ref.current.toString());
 
   if (ref.current) {
     ref.current = false;

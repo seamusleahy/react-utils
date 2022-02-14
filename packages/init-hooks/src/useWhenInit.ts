@@ -1,3 +1,4 @@
+import { useDebugValue } from "react";
 import { useIsInit } from "./useIsInit";
 
 /**
@@ -19,6 +20,7 @@ import { useIsInit } from "./useIsInit";
  */
 export function useWhenInit(callback: () => void): void {
   const isInit = useIsInit();
+  useDebugValue(isInit ? "executing callback" : "not executing callback");
 
   if (isInit) {
     callback();
