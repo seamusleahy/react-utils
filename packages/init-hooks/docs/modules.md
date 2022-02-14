@@ -37,7 +37,7 @@ const Example: React.FC = () => {
 
 #### Defined in
 
-[useIsInit.ts:19](https://github.com/seamusleahy/react-utils/blob/036cbf1/packages/init-hooks/src/useIsInit.ts#L19)
+[useIsInit.ts:19](https://github.com/seamusleahy/react-utils/blob/e76d5a5/packages/init-hooks/src/useIsInit.ts#L19)
 
 ___
 
@@ -71,7 +71,7 @@ const Example: React.FC = () => {
 
 #### Defined in
 
-[useWhenInit.ts:20](https://github.com/seamusleahy/react-utils/blob/036cbf1/packages/init-hooks/src/useWhenInit.ts#L20)
+[useWhenInit.ts:21](https://github.com/seamusleahy/react-utils/blob/e76d5a5/packages/init-hooks/src/useWhenInit.ts#L21)
 
 ___
 
@@ -104,4 +104,4 @@ const Example: React.FC = () => {
 
 #### Defined in
 
-[useWhenInitAsync.ts:19](https://github.com/seamusleahy/react-utils/blob/036cbf1/packages/init-hooks/src/useWhenInitAsync.ts#L19)
+[useWhenInitAsync.ts:19](https://github.com/seamusleahy/react-utils/blob/e76d5a5/packages/init-hooks/src/useWhenInitAsync.ts#L19)

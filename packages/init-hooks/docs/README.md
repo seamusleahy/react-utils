@@ -3,6 +3,9 @@
 # @seamusleahy/init-hooks: React initialization hooks
 This module provides explicit React hooks for running initialization code in functional components. These hooks replace a familiar pattern of using the `useEffect()` hook to run initialization code.
 
+## Examples
+
+[See examples at codesandbox.io](https://codesandbox.io/s/seamusleahy-init-hooks-examples-575qo?file=/src/App.tsx)
 ## Installation
 This module is available via [NPM](https://www.npmjs.org).
 
