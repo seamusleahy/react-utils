@@ -1813,6 +1813,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@seamusleahy/const-value-hook@workspace:packages/const-value-hook":
+  version: 0.0.0-use.local
+  resolution: "@seamusleahy/const-value-hook@workspace:packages/const-value-hook"
+  dependencies:
+    "@testing-library/react-hooks": ^7.0.2
+    "@types/jest": ^26.0.14
+    "@types/react": 17.0.38
+    jest: ^26.4.2
+    jest-github-actions-reporter: ^1.0.3
+    microbundle: ^0.13.0
+    react: 17.0.2
+    react-test-renderer: ^16.9.0
+    ts-jest: ^26.3.0
+    typedoc: ^0.22.10
+    typedoc-plugin-markdown: ^3.11.8
+    typescript: 4.5.4
+  peerDependencies:
+    react: ^16.8
+  languageName: unknown
+  linkType: soft
+
 "@seamusleahy/init-hooks@workspace:packages/init-hooks":
   version: 0.0.0-use.local
   resolution: "@seamusleahy/init-hooks@workspace:packages/init-hooks"

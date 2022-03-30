@@ -1,0 +1,53 @@
+{
+  "name": "@seamusleahy/const-value-hook",
+  "version": "1.0.0-beta2",
+  "description": "React hook for using the same value through the life of a component",
+  "main": "dist/const-value-hook.js",
+  "umd:main": "dist/const-value-hook.umd.js",
+  "module": "dist/const-value-hook.mjs",
+  "files": [
+    "dist",
+    "readme.md"
+  ],
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^26.0.14",
+    "@types/react": "17.0.38",
+    "jest": "^26.4.2",
+    "jest-github-actions-reporter": "^1.0.3",
+    "microbundle": "^0.13.0",
+    "react": "17.0.2",
+    "react-test-renderer": "^16.9.0",
+    "ts-jest": "^26.3.0",
+    "typedoc": "^0.22.10",
+    "typedoc-plugin-markdown": "^3.11.8",
+    "typescript": "4.5.4"
+  },
+  "scripts": {
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --ci --reporters='default' --reporters='jest-github-actions-reporter'",
+    "docs": "typedoc src/index.ts --plugin typedoc-plugin-markdown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seamusleahy/react-utils"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "const"
+  ],
+  "author": "Seamus P. H. Leahy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seamusleahy/react-utils/labels/const-value-hook"
+  },
+  "homepage": "https://github.com/seamusleahy/react-utils/blob/main/packages/const-value-hook/README.md",
+  "peerDependencies": {
+    "react": "^16.8"
+  }
+}
