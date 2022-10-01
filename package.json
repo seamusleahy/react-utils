@@ -28,8 +28,15 @@
     "typescript": "4.5.4"
   },
   "scripts": {
+    "shared:do-build": "cd $INIT_CWD && microbundle -o dist/ --sourcemap false --compress false",
+    "shared:do-dev": "cd $INIT_CWD && microbundle watch -o dist/ --sourcemap false --compress false",
+    "shared:do-test": "cd $INIT_CWD && jest --coverage",
+    "shared:do-test-watch": "cd $INIT_CWD && jest --watch",
+    "shared:do-test-ci": "jest --ci --reporters='default' --reporters='jest-github-actions-reporter'",
+    "shared:do-docs": "cd $INIT_CWD && typedoc src/index.ts --plugin typedoc-plugin-markdown",
     "postinstall": "husky install",
     "format": "prettier **/*.ts **/*.js --write",
+    "shared:do-format": "prettier $INIT_CWD/**/*.ts $INIT_CWD/**/*.js --write",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "mismatch-deps": "yarn syncpack list-mismatches",
     "test:ci": "yarn workspaces foreach run test:ci"

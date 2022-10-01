@@ -19,18 +19,20 @@
     "microbundle": "^0.13.0",
     "react": "17.0.2",
     "react-test-renderer": "^16.9.0",
+    "release-it": "^14.14.0",
     "ts-jest": "^26.3.0",
     "typedoc": "^0.22.10",
     "typedoc-plugin-markdown": "^3.11.8",
     "typescript": "4.5.4"
   },
   "scripts": {
-    "build": "microbundle -o dist/ --sourcemap false --compress false",
-    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
-    "test": "jest --coverage",
-    "test:watch": "jest --watch",
-    "test:ci": "jest --ci --reporters='default' --reporters='jest-github-actions-reporter'",
-    "docs": "typedoc src/index.ts --plugin typedoc-plugin-markdown"
+    "build": "yarn shared:do-build",
+    "dev": "yarn shared:do-dev",
+    "test": "yarn shared:do-test",
+    "test:watch": "yarn shared:do-test-watch",
+    "test:ci": "yarn shared:do-test-ci",
+    "docs": "yarn shared:do-docs",
+    "format": "yarn shared:do-format"
   },
   "repository": {
     "type": "git",
