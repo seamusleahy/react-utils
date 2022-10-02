@@ -31,12 +31,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/const-value-hook"
       },
       {
-        "name": "@seamusleahy/empty-component",
-        "reference": "workspace:packages/empty-component"
-      },
-      {
         "name": "@seamusleahy/init-hooks",
         "reference": "workspace:packages/init-hooks"
+      },
+      {
+        "name": "@seamusleahy/null-component",
+        "reference": "workspace:packages/null-component"
       },
       {
         "name": "@seamusleahy/values-changes-hooks",
@@ -48,8 +48,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["@seamusleahy/build", ["workspace:libs/build"]],
       ["@seamusleahy/const-value-hook", ["workspace:packages/const-value-hook"]],
-      ["@seamusleahy/empty-component", ["workspace:packages/empty-component"]],
       ["@seamusleahy/init-hooks", ["workspace:packages/init-hooks"]],
+      ["@seamusleahy/null-component", ["workspace:packages/null-component"]],
       ["@seamusleahy/values-changes-hooks", ["workspace:packages/values-changed-hooks"]],
       ["react-utils", ["workspace:."]]
     ],
@@ -3382,27 +3382,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["@seamusleahy/empty-component", [
-        ["workspace:packages/empty-component", {
-          "packageLocation": "./packages/empty-component/",
-          "packageDependencies": [
-            ["@seamusleahy/empty-component", "workspace:packages/empty-component"],
-            ["@testing-library/react-hooks", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:7.0.2"],
-            ["@types/jest", "npm:26.0.24"],
-            ["@types/react", "npm:17.0.38"],
-            ["jest", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:26.6.3"],
-            ["jest-github-actions-reporter", "npm:1.0.3"],
-            ["microbundle", "npm:0.13.3"],
-            ["react", "npm:17.0.2"],
-            ["react-test-renderer", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:16.14.0"],
-            ["ts-jest", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:26.5.6"],
-            ["typedoc", "virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:0.22.10"],
-            ["typedoc-plugin-markdown", "virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:3.11.8"],
-            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
       ["@seamusleahy/init-hooks", [
         ["workspace:packages/init-hooks", {
           "packageLocation": "./packages/init-hooks/",
@@ -3420,6 +3399,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:26.5.6"],
             ["typedoc", "virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:0.22.10"],
             ["typedoc-plugin-markdown", "virtual:f280fb918091b2b83d3cf78876587d11a3c301a60abd7eea3494fa91e185cb78e22f498c7ccb369521f60f3ff6f983ff9d8aafb190bb8eef5aa59fc9cc13357a#npm:3.11.8"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@seamusleahy/null-component", [
+        ["workspace:packages/null-component", {
+          "packageLocation": "./packages/null-component/",
+          "packageDependencies": [
+            ["@seamusleahy/null-component", "workspace:packages/null-component"],
+            ["@types/react", "npm:16.14.32"],
+            ["microbundle", "npm:0.13.3"],
+            ["release-it", "npm:14.14.0"],
+            ["typedoc", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:0.22.10"],
+            ["typedoc-plugin-markdown", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:3.11.8"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "linkType": "SOFT",
@@ -3775,6 +3769,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/react", [
+        ["npm:16.14.32", {
+          "packageLocation": "./.yarn/cache/@types-react-npm-16.14.32-607ab929ef-e26290b150.zip/node_modules/@types/react/",
+          "packageDependencies": [
+            ["@types/react", "npm:16.14.32"],
+            ["@types/prop-types", "npm:15.7.4"],
+            ["@types/scheduler", "npm:0.16.2"],
+            ["csstype", "npm:3.0.10"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:17.0.38", {
           "packageLocation": "./.yarn/cache/@types-react-npm-17.0.38-e8f2055f5b-4079f4f959.zip/node_modules/@types/react/",
           "packageDependencies": [
@@ -14477,6 +14481,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:0.22.10", {
+          "packageLocation": "./.yarn/__virtual__/typedoc-virtual-97cc78a4b3/0/cache/typedoc-npm-0.22.10-6c1c23f26d-404932ae8e.zip/node_modules/typedoc/",
+          "packageDependencies": [
+            ["typedoc", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:0.22.10"],
+            ["@types/typedoc-plugin-markdown", null],
+            ["@types/typescript", null],
+            ["glob", "npm:7.2.0"],
+            ["lunr", "npm:2.3.9"],
+            ["marked", "npm:3.0.8"],
+            ["minimatch", "npm:3.0.4"],
+            ["shiki", "npm:0.9.15"],
+            ["typedoc-plugin-markdown", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:3.11.8"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
+          ],
+          "packagePeers": [
+            "@types/typedoc-plugin-markdown",
+            "@types/typescript",
+            "typedoc-plugin-markdown",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:0.22.10", {
           "packageLocation": "./.yarn/__virtual__/typedoc-virtual-cd3dce53f8/0/cache/typedoc-npm-0.22.10-6c1c23f26d-404932ae8e.zip/node_modules/typedoc/",
           "packageDependencies": [
@@ -14490,28 +14516,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["shiki", "npm:0.9.15"],
             ["typedoc-plugin-markdown", "virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:3.11.8"],
             ["typescript", null]
-          ],
-          "packagePeers": [
-            "@types/typedoc-plugin-markdown",
-            "@types/typescript",
-            "typedoc-plugin-markdown",
-            "typescript"
-          ],
-          "linkType": "HARD",
-        }],
-        ["virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:0.22.10", {
-          "packageLocation": "./.yarn/__virtual__/typedoc-virtual-49924923c1/0/cache/typedoc-npm-0.22.10-6c1c23f26d-404932ae8e.zip/node_modules/typedoc/",
-          "packageDependencies": [
-            ["typedoc", "virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:0.22.10"],
-            ["@types/typedoc-plugin-markdown", null],
-            ["@types/typescript", null],
-            ["glob", "npm:7.2.0"],
-            ["lunr", "npm:2.3.9"],
-            ["marked", "npm:3.0.8"],
-            ["minimatch", "npm:3.0.4"],
-            ["shiki", "npm:0.9.15"],
-            ["typedoc-plugin-markdown", "virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:3.11.8"],
-            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "packagePeers": [
             "@types/typedoc-plugin-markdown",
@@ -14580,13 +14584,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:3.11.8", {
-          "packageLocation": "./.yarn/__virtual__/typedoc-plugin-markdown-virtual-ad726020c3/0/cache/typedoc-plugin-markdown-npm-3.11.8-64b27c1ab3-8cd28b8d4e.zip/node_modules/typedoc-plugin-markdown/",
+        ["virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:3.11.8", {
+          "packageLocation": "./.yarn/__virtual__/typedoc-plugin-markdown-virtual-09bbb3fcae/0/cache/typedoc-plugin-markdown-npm-3.11.8-64b27c1ab3-8cd28b8d4e.zip/node_modules/typedoc-plugin-markdown/",
           "packageDependencies": [
-            ["typedoc-plugin-markdown", "virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:3.11.8"],
+            ["typedoc-plugin-markdown", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:3.11.8"],
             ["@types/typedoc", null],
             ["handlebars", "npm:4.7.7"],
-            ["typedoc", "virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:0.22.10"]
+            ["typedoc", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:0.22.10"]
           ],
           "packagePeers": [
             "@types/typedoc",
@@ -14594,13 +14598,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:3.11.8", {
-          "packageLocation": "./.yarn/__virtual__/typedoc-plugin-markdown-virtual-b0df13f16d/0/cache/typedoc-plugin-markdown-npm-3.11.8-64b27c1ab3-8cd28b8d4e.zip/node_modules/typedoc-plugin-markdown/",
+        ["virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:3.11.8", {
+          "packageLocation": "./.yarn/__virtual__/typedoc-plugin-markdown-virtual-ad726020c3/0/cache/typedoc-plugin-markdown-npm-3.11.8-64b27c1ab3-8cd28b8d4e.zip/node_modules/typedoc-plugin-markdown/",
           "packageDependencies": [
-            ["typedoc-plugin-markdown", "virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:3.11.8"],
+            ["typedoc-plugin-markdown", "virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:3.11.8"],
             ["@types/typedoc", null],
             ["handlebars", "npm:4.7.7"],
-            ["typedoc", "virtual:e9803b7573a9080836aef7c16a5225866c9bd67ed7668187d31035333d8dc2fc0eeb7dc4e7046d6236f83a318d35faecb5128457d1232ce3164a2b85070b89c8#npm:0.22.10"]
+            ["typedoc", "virtual:dcc27b871986bd6a2d1378256bbbb1b20b523bec6c7913b31ae7e9e9ea12686eb7ca53943cabe9c3a90f53be42be491928ea3b1df6ca87659aa06d7148a08175#npm:0.22.10"]
           ],
           "packagePeers": [
             "@types/typedoc",

@@ -1982,27 +1982,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@seamusleahy/empty-component@workspace:packages/empty-component":
-  version: 0.0.0-use.local
-  resolution: "@seamusleahy/empty-component@workspace:packages/empty-component"
-  dependencies:
-    "@testing-library/react-hooks": ^7.0.2
-    "@types/jest": ^26.0.14
-    "@types/react": 17.0.38
-    jest: ^26.4.2
-    jest-github-actions-reporter: ^1.0.3
-    microbundle: ^0.13.0
-    react: 17.0.2
-    react-test-renderer: ^16.9.0
-    ts-jest: ^26.3.0
-    typedoc: ^0.22.10
-    typedoc-plugin-markdown: ^3.11.8
-    typescript: 4.5.4
-  peerDependencies:
-    react: ^16.8
-  languageName: unknown
-  linkType: soft
-
 "@seamusleahy/init-hooks@workspace:packages/init-hooks":
   version: 0.0.0-use.local
   resolution: "@seamusleahy/init-hooks@workspace:packages/init-hooks"
@@ -2017,6 +1996,21 @@ __metadata:
     react-test-renderer: ^16.9.0
     release-it: ^14.14.0
     ts-jest: ^26.3.0
+    typedoc: ^0.22.10
+    typedoc-plugin-markdown: ^3.11.8
+    typescript: 4.5.4
+  peerDependencies:
+    react: ^16.8
+  languageName: unknown
+  linkType: soft
+
+"@seamusleahy/null-component@workspace:packages/null-component":
+  version: 0.0.0-use.local
+  resolution: "@seamusleahy/null-component@workspace:packages/null-component"
+  dependencies:
+    "@types/react": ^16.8
+    microbundle: ^0.13.0
+    release-it: ^14.14.0
     typedoc: ^0.22.10
     typedoc-plugin-markdown: ^3.11.8
     typescript: 4.5.4
@@ -2351,6 +2345,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 4079f4f959cd4a4bfaeda8b89fe8a1b1f8bdc9d87acfdc5f74a0b39cec9ec6a470724357c62778c0f063180b360c250e920c5a142f1dbcda67d9cc25a6d43a85
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^16.8":
+  version: 16.14.32
+  resolution: "@types/react@npm:16.14.32"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: e26290b15049020d1ed09a4f6f3fb93d17079da52850e7ef1a3f5bd19847e1acb921bfca8e602cb6af08cb2e54f1eba252082ab32b96a7db76c07197d20ff88d
   languageName: node
   linkType: hard
 

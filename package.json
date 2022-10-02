@@ -34,6 +34,7 @@
     "shared:do-test-watch": "cd $INIT_CWD && jest --watch",
     "shared:do-test-ci": "jest --ci --reporters='default' --reporters='jest-github-actions-reporter'",
     "shared:do-docs": "cd $INIT_CWD && typedoc src/index.ts --plugin typedoc-plugin-markdown",
+    "shared:do-type-check": "cd $INIT_CWD && tsc --noEmit && echo \"\\e[1;32mPASSED\\e[0m\"",
     "postinstall": "husky install",
     "format": "prettier **/*.ts **/*.js --write",
     "shared:do-format": "prettier $INIT_CWD/**/*.ts $INIT_CWD/**/*.js --write",

@@ -1,0 +1,44 @@
+{
+  "name": "@seamusleahy/null-component",
+  "version": "1.0.0-alpha",
+  "description": "React hooks for component initialization",
+  "main": "dist/values-changes-hooks.js",
+  "umd:main": "dist/values-changes-hooks.umd.js",
+  "module": "dist/values-changes-hooks.mjs",
+  "files": [
+    "dist",
+    "readme.md"
+  ],
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/react": "^16.8",
+    "microbundle": "^0.13.0",
+    "release-it": "^14.14.0",
+    "typedoc": "^0.22.10",
+    "typedoc-plugin-markdown": "^3.11.8",
+    "typescript": "4.5.4"
+  },
+  "scripts": {
+    "build": "yarn shared:do-build",
+    "dev": "yarn shared:do-dev",
+    "docs": "yarn shared:do-docs",
+    "type-check": "yarn shared:do-type-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seamusleahy/react-utils"
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "author": "Seamus P. H. Leahy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seamusleahy/react-utils/labels/null-component"
+  },
+  "homepage": "https://github.com/seamusleahy/react-utils/blob/main/packages/null-component/README.md",
+  "peerDependencies": {
+    "react": "^16.8"
+  }
+}

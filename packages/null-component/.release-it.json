@@ -1,0 +1,13 @@
+{
+  "git": {
+    "commitMessage": "[ci skip] release v${version}",
+    "requireCleanWorkingDir": false
+  },
+  "hooks": {
+    "after:bump": "yarn run build; yarn doc",
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  },
+  "github": {
+    "release": true
+  }
+}
