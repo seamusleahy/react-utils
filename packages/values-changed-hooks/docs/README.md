@@ -1,3 +1,5 @@
+@seamusleahy/values-changes-hooks / [Exports](modules.md)
+
 # @seamusleahy/values-changes-hooks: Know when a value changes
 This module provides explicit React hook for running code when a value has changed functional components. This hook replace a familiar pattern of using the `useEffect()` hook to watch when values change.
 

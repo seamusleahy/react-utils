@@ -43,4 +43,4 @@ const Example: FC = () => {
 
 #### Defined in
 
-[useConstValue.ts:17](https://github.com/seamusleahy/react-utils/blob/427d711/packages/const-value-hook/src/useConstValue.ts#L17)
+[useConstValue.ts:17](https://github.com/seamusleahy/react-utils/blob/328ce1f/packages/const-value-hook/src/useConstValue.ts#L17)

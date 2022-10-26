@@ -6,6 +6,26 @@ This module provides explicit React hooks for running initialization code in fun
 ## Examples
 
 [See examples at codesandbox.io](https://codesandbox.io/s/seamusleahy-init-hooks-examples-575qo?file=/src/App.tsx)
+
+```typescript
+import { useWhenInit } from "@seamusleahy/init-hooks";
+
+export const Example: FC = () => {
+  const [c, setC] = useState(0);
+  let text = "Not initial";
+  useWhenInit(() => (text = "Initial"));
+  return (
+    <div>
+      <h1>Example of useWhenInit</h1>
+      <p>{text}</p>
+      <p>
+        <button onClick={() => setC((v) => v + 1)}>Update [{c}]</button>
+      </p>
+    </div>
+  );
+}
+```
+
 ## Installation
 This module is available via [NPM](https://www.npmjs.org).
 

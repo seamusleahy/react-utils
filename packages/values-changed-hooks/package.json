@@ -27,11 +27,8 @@
   "scripts": {
     "build": "yarn shared:do-build",
     "dev": "yarn shared:do-dev",
-    "test": "yarn shared:do-test",
-    "type-check": "yarn shared:do-type-check",
-    "test:watch": "yarn shared:do-test-watch",
-    "test:ci": "yarn shared:do-test-ci",
-    "docs": "yarn shared:do-docs"
+    "docs": "yarn shared:do-docs",
+    "type-check": "yarn shared:do-type-check"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,21 @@
 @seamusleahy/const-value-hook / [Exports](modules.md)
 
-# @seamusleahy/const-value-hook: React const value hook
+# @seamusleahy/const-value-hook: Use the same value for each render
 A light-weight hook to improve readability of your code when you want the same value during the life of a component.
 
 ## Examples
 
 [See examples at codesandbox.io](https://codesandbox.io/s/optimistic-dust-pic29n?file=/src/App.tsx)
+
+```typescript
+import { useConstValue } from "@seamusleahy/const-value-hook";
+
+const Example: FC = () => {
+  const cache = useConstValue(() => new Map<string, Set<string>>());
+  // `cache` will always be the same value from render to render
+  // ...
+}
+```
 
 ## Installation
 This module is available via [NPM](https://www.npmjs.org).
