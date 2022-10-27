@@ -21,8 +21,8 @@
     "eslint-plugin-react": "7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-unicorn": "39.0.0",
-    "husky": "^7.0.0",
-    "lint-staged": "^12.1.4",
+    "husky": "^8.0.1",
+    "lint-staged": "^11.2.0",
     "prettier": "^2.0.4",
     "syncpack": "^5.8.15",
     "typescript": "4.5.4"
@@ -38,8 +38,10 @@
     "postinstall": "husky install",
     "format": "prettier **/*.ts **/*.js --write",
     "shared:do-format": "prettier $INIT_CWD/**/*.ts $INIT_CWD/**/*.js --write",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint": "eslint --ext .ts,.tsx .",
     "mismatch-deps": "yarn syncpack list-mismatches",
-    "test:ci": "yarn workspaces foreach run test:ci"
+    "test:ci": "yarn workspaces foreach run test:ci",
+    "update-browserlist": "yarn up -R caniuse-lite",
+    "lint-staged": "lint-staged"
   }
 }

@@ -1,7 +1,7 @@
 import { DevNullComponent } from "./DevNullComponent";
 import { ProdNullComponent } from "./ProdNullComponent";
 
-declare var process: {
+declare let process: {
   env: {
     NODE_ENV: string;
   };

@@ -1,0 +1,29 @@
+{
+  "name": "@seamusleahy/build",
+  "private": true,
+  "description": "TODO",
+  "dependencies": {
+    "microbundle": "^0.13.0",
+    "typedoc": "^0.22.10",
+    "typedoc-plugin-markdown": "^3.11.8"
+  },
+  "scripts": {
+    "shared:build": "cd $INIT_CWD && microbundle -o dist/ --sourcemap false --compress false",
+    "shared:dev": "cd $INIT_CWD && microbundle watch -o dist/ --sourcemap false --compress false",
+    "shared:test": "cd $INIT_CWD && jest --coverage",
+    "shared:test:watch": "cd $INIT_CWD && jest --watch",
+    "shared:test:ci": "cd $INIT_CWD && jest --ci --reporters='default' --reporters='jest-github-actions-reporter'",
+    "shared:docs": "cd $INIT_CWD && typedoc src/index.ts --plugin typedoc-plugin-markdown",
+    "shared:build-all": "cd $INIT_CWD && yarn shared:build && shared:docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seamusleahy/react-utils"
+  },
+  "author": "Seamus P. H. Leahy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seamusleahy/react-utils/labels/init-hooks"
+  },
+  "homepage": "https://github.com/seamusleahy/react-utils/blob/main/packages/init-hooks/README.md"
+}

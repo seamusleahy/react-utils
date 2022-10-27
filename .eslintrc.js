@@ -45,8 +45,8 @@ module.exports = {
     "unicorn/prevent-abbreviations": "off",
     // Doesn't play nice with Typescript or Node 12
     "unicorn/prefer-node-protocol": "off",
-
     "unicorn/filename-case": "off",
+    "unicorn/no-null": "off",
   },
   settings: {
     jest: {
