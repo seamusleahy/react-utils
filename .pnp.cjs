@@ -39,6 +39,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/null-component"
       },
       {
+        "name": "@seamusleahy/pointer-down-then-up",
+        "reference": "workspace:packages/pointer-down-then-up"
+      },
+      {
         "name": "@seamusleahy/values-changes-hooks",
         "reference": "workspace:packages/values-changed-hooks"
       }
@@ -50,6 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@seamusleahy/const-value-hook", ["workspace:packages/const-value-hook"]],
       ["@seamusleahy/init-hooks", ["workspace:packages/init-hooks"]],
       ["@seamusleahy/null-component", ["workspace:packages/null-component"]],
+      ["@seamusleahy/pointer-down-then-up", ["workspace:packages/pointer-down-then-up"]],
       ["@seamusleahy/values-changes-hooks", ["workspace:packages/values-changed-hooks"]],
       ["react-utils", ["workspace:."]]
     ],
@@ -3414,6 +3419,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.14.0"],
             ["typedoc", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:0.22.10"],
             ["typedoc-plugin-markdown", "virtual:cc8c036347683119df6a1b3be7c5e3a4bef3ed819c421259892cbdfb9e470ad2ec3462fd78c6f284d038f9eb1fb49c93794cf828e9fd506a3e65e761ab4d5e4b#npm:3.11.8"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@seamusleahy/pointer-down-then-up", [
+        ["workspace:packages/pointer-down-then-up", {
+          "packageLocation": "./packages/pointer-down-then-up/",
+          "packageDependencies": [
+            ["@seamusleahy/pointer-down-then-up", "workspace:packages/pointer-down-then-up"],
+            ["@testing-library/react-hooks", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:7.0.2"],
+            ["@types/jest", "npm:26.0.24"],
+            ["@types/react", "npm:17.0.38"],
+            ["jest", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:26.6.3"],
+            ["jest-github-actions-reporter", "npm:1.0.3"],
+            ["microbundle", "npm:0.13.3"],
+            ["react", "npm:17.0.2"],
+            ["react-test-renderer", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:16.14.0"],
+            ["release-it", "npm:14.14.0"],
+            ["ts-jest", "virtual:98dbe0ba72bdfbbe3d6f1eb08fa83983cdb3358692bfd670fedb0bc86e132d14fb8cf9fa252bd885aa534f642f317eb8d9c0f62fcba65c111f62260700426979#npm:26.5.6"],
+            ["typedoc", "virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:0.22.10"],
+            ["typedoc-plugin-markdown", "virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:3.11.8"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "linkType": "SOFT",
@@ -14438,6 +14465,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:0.22.10", {
+          "packageLocation": "./.yarn/__virtual__/typedoc-virtual-c7e87a434b/0/cache/typedoc-npm-0.22.10-6c1c23f26d-404932ae8e.zip/node_modules/typedoc/",
+          "packageDependencies": [
+            ["typedoc", "virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:0.22.10"],
+            ["@types/typedoc-plugin-markdown", null],
+            ["@types/typescript", null],
+            ["glob", "npm:7.2.0"],
+            ["lunr", "npm:2.3.9"],
+            ["marked", "npm:3.0.8"],
+            ["minimatch", "npm:3.0.4"],
+            ["shiki", "npm:0.9.15"],
+            ["typedoc-plugin-markdown", "virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:3.11.8"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
+          ],
+          "packagePeers": [
+            "@types/typedoc-plugin-markdown",
+            "@types/typescript",
+            "typedoc-plugin-markdown",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:813ae86fb58f5b2539db100f43d506b0d4886d0b1f14a4993382c1c6bdb4e68eb12cc85e2a1198eaf32bb66a20b0e0865ddace629d6faf1f873f8a404113cb89#npm:0.22.10", {
           "packageLocation": "./.yarn/__virtual__/typedoc-virtual-0976f858d8/0/cache/typedoc-npm-0.22.10-6c1c23f26d-404932ae8e.zip/node_modules/typedoc/",
           "packageDependencies": [
@@ -14556,6 +14605,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typedoc-plugin-markdown", "npm:3.11.8"]
           ],
           "linkType": "SOFT",
+        }],
+        ["virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:3.11.8", {
+          "packageLocation": "./.yarn/__virtual__/typedoc-plugin-markdown-virtual-a9bffaa3d3/0/cache/typedoc-plugin-markdown-npm-3.11.8-64b27c1ab3-8cd28b8d4e.zip/node_modules/typedoc-plugin-markdown/",
+          "packageDependencies": [
+            ["typedoc-plugin-markdown", "virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:3.11.8"],
+            ["@types/typedoc", null],
+            ["handlebars", "npm:4.7.7"],
+            ["typedoc", "virtual:69b778c8817c229280c55a7beb12fcfeec52e09f870a98a0f8976b96d3361c5dd05d57769c8968c27d35d4762d13032099b80b1bb6b5cd3201fec652be145313#npm:0.22.10"]
+          ],
+          "packagePeers": [
+            "@types/typedoc",
+            "typedoc"
+          ],
+          "linkType": "HARD",
         }],
         ["virtual:813ae86fb58f5b2539db100f43d506b0d4886d0b1f14a4993382c1c6bdb4e68eb12cc85e2a1198eaf32bb66a20b0e0865ddace629d6faf1f873f8a404113cb89#npm:3.11.8", {
           "packageLocation": "./.yarn/__virtual__/typedoc-plugin-markdown-virtual-a5d2f8ea73/0/cache/typedoc-plugin-markdown-npm-3.11.8-64b27c1ab3-8cd28b8d4e.zip/node_modules/typedoc-plugin-markdown/",
