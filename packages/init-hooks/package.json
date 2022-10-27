@@ -1,6 +1,6 @@
 {
   "name": "@seamusleahy/init-hooks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React hooks for component initialization",
   "main": "dist/init-hooks.js",
   "umd:main": "dist/init-hooks.umd.js",

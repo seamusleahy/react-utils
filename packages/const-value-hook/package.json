@@ -1,6 +1,6 @@
 {
   "name": "@seamusleahy/const-value-hook",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0",
   "description": "React hook for using the same value through the life of a component",
   "main": "dist/const-value-hook.js",
   "umd:main": "dist/const-value-hook.umd.js",

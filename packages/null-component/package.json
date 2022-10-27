@@ -1,10 +1,10 @@
 {
   "name": "@seamusleahy/null-component",
   "version": "1.0.0-alpha",
-  "description": "React hooks for component initialization",
-  "main": "dist/values-changes-hooks.js",
-  "umd:main": "dist/values-changes-hooks.umd.js",
-  "module": "dist/values-changes-hooks.mjs",
+  "description": "React component that shows you the reason why your component is null",
+  "main": "dist/null-component.js",
+  "umd:main": "dist/null-component.umd.js",
+  "module": "dist/null-component.mjs",
   "files": [
     "dist",
     "readme.md"
